@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Sample student data
+data = {
+    "rollno": [101, 102, 103, 104, 105],
+    "name": ["Alice", "Bob", "Charlie", "David", "Eve"],
+    "place": ["NY", "LA", "SF", "TX", "NJ"],
+    "mark": [85, 90, 78, 88, 92]
+}
+df = pd.DataFrame(data)
+df.to_csv("stud.csv", index=False)
+print("File 'stud.csv' created successfully!")
